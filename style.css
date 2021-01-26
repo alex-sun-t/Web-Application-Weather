@@ -1,0 +1,221 @@
+body {
+    font-family: 'Jost', sans-serif;
+}
+.info-block {
+    margin-top:5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.today-block {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.356);
+    -webkit-transition-property: color;
+  -webkit-transition-duration: 0.5s;
+}
+
+.back-g {
+    background-image:url("https://www.xmple.com/wallpaper/white-blue-gradient-linear-1920x1080-c2-ffffff-00bfff-a-270-f-14.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+}
+
+.ToD-temp {
+    font-size: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.days {
+    background-color: rgba(255, 255, 255, 0.356);
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 120px;
+    cursor: pointer;
+    margin-top: 5px;
+    -webkit-transition-property: all;
+  -webkit-transition-duration: 0.5s;  
+}
+
+.days:hover {
+    transform: scale(1.1);
+}
+
+.temp-7-days{
+    font-size: 30px;
+    -webkit-transition-property: color;
+  -webkit-transition-duration: 0.5s;
+
+}
+
+.today-block h5{
+    color: gray;
+}
+
+.today-block span {
+    color: black;
+    -webkit-transition-property: color;
+  -webkit-transition-duration: 0.5s;
+}
+
+.week {
+    display: flex;
+    justify-content:space-between;
+}
+
+.date-week {
+    margin-top:5px ;
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+}
+
+.min-max {
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+.min-max p { color: gray; }
+.min-max b { color: black; 
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 0.5s;
+}
+
+.h-bar{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.356);
+    border: 1px solid black;
+    border-top: 0px;
+    border-radius: 0px 0px 20px 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-transition-property: background;
+  -webkit-transition-duration: 0.5s;
+ 
+}
+
+.pos{
+    display: flex;
+    align-items: center;
+}
+
+.form-srch {
+    display: flex;
+    justify-content: center;
+}
+
+.loca-srch {
+    width: 450px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.logo {
+    text-decoration: none;
+    background-image:url(image/logo.gif);
+}
+
+.my-btn{
+    height: 40px;
+}
+
+.sel-country{
+    margin-top: 3px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.dark-theme{
+    font-size: 35px;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+#dark-icon{
+    -webkit-transition-property:all;
+  -webkit-transition-duration: 0.5s;
+}
+
+/*Switch*/
+
+.switch {
+    margin-left: 5px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-bottom: 0px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #2196F3;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: black;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

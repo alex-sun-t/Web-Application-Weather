@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="back-g">
+
+            <div class="h-bar">
+                <div class="row pos">
+            
+                    <a href="" class="col-lg-3 col-md-3 col-sm-12 col-xs-12"><img height="60px" src="image/logo.gif"></a>
+            
+                    <select id="country" class="sel-country col-lg-2 col-md-2 col-sm-3 col-xs-10">
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Russia">Russian</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Belarus">Belarus</option>
+                    </select>
+                    <form class="form-srch col-lg-5 col-md-6 col-sm-6 col-xs-12">
+                        <input id="search" class="loca-srch mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="select" class="btn btn-outline-success my-2 my-sm-0 my-btn" type="button">Search</button>
+                    </form>
+                    <div class="dark-theme col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                        <i id="dark-icon" class="fas fa-moon"></i>
+                        <label class="switch">
+                            <input type="checkbox" id="dark-thm">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        <div class="info-block">
+
+                <div class="today-block">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-10 col-xs-12">
+                            <h4 id="coun-city">Ukraine/Rovno</h4>
+                            <h2 class="ToD-temp"></h2>
+                        </div>
+                        <div class="wether-info col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                            <h3>Today</h3>
+                            <h5>Pressure: <span id="press"></span> </h5>
+                            <h5>Humidity: <span id="humid"></span></h5>
+                            <h5>Wind speed: <span id="wind"></span></h5>
+                            <h5>Precipitation: <span id="precip"></span></h5>
+                        </div>
+                        <div id="im-g" class="col-lg-4 col-md-6 col-sm-10 col-xs-12">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-block">
+            <div class="container">
+                <div id="wk" class="row week">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>
